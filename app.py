@@ -91,9 +91,9 @@ if st.button("Predict Financial Risk"):
         st.subheader("Prediction Result")
 
         if prediction == 1:
-            st.error(f"⚠️ High Financial Risk\n\nProbability: {probability:.2f}")
+            st.error(f"⚠️ High liquidity Risk\n\nProbability: {probability:.2f}")
         else:
-            st.success(f"✅ Low Financial Risk\n\nProbability: {probability:.2f}")
+            st.success(f"✅ Low liquidity Risk\n\nProbability: {probability:.2f}")
 
     except:
         st.warning("Please enter valid numeric values only.")
